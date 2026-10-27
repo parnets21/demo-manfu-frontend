@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'http://localhost:5000/api/api');
+const BASE = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'https://demo-manfu-backened.onrender.com/api/api');
 const API_URL = `${BASE}/brand-orders`;
 
 const getToken = () =>

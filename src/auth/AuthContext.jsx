@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 
-const BASE = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'http://localhost:5000/api');
+const BASE = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'https://demo-manfu-backened.onrender.com/api');
 const INACTIVITY_TIMEOUT = 30 * 60 * 1000; // 30 minutes
 
 const AuthContext = createContext(null);

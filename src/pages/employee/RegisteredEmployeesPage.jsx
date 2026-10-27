@@ -12,7 +12,7 @@ import { FiEdit2, FiTrash2 } from 'react-icons/fi';
 import Pagination from '../../components/common/Pagination';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
-const API_BASE     = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'http://localhost:5000/api');
+const API_BASE     = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'https://demo-manfu-backened.onrender.com/api');
 const MEDIA_ORIGIN = API_BASE.replace(/\/api\/?$/, '');
 const imgUrl  = p  => { if (!p) return ''; if (p.startsWith('http')) return p; return `${MEDIA_ORIGIN}${p.startsWith('/') ? p : `/${p}`}`; };
 const fmtDate = v  => { if (!v) return '—'; const d = new Date(v); return isNaN(d) ? '—' : d.toLocaleDateString('en-GB'); };

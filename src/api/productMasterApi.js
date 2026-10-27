@@ -1,7 +1,7 @@
 import api from './axiosConfig';
 
 const BASE = '/product-master';
-const BASE_URL = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'http://localhost:5000/api');
+const BASE_URL = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? window.location.origin + '/api' : 'https://demo-manfu-backened.onrender.com/api');
 
 const getToken = () =>
   localStorage.getItem('chakra_token') || sessionStorage.getItem('chakra_token');
